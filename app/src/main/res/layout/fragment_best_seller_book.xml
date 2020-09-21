@@ -2,12 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="6dp"
     android:orientation="vertical">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:orientation="horizontal"
+    >
     <TextView
         android:id="@+id/ranking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="@id/book_image"
+        android:typeface="serif"
+        android:textSize="22sp"
         android:text="1"
         />
 
@@ -15,13 +24,14 @@
         android:id="@+id/book_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         />
-
+</RelativeLayout>
     <TextView
         android:id="@+id/book_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:textStyle="bold"
         android:textAppearance="?attr/textAppearanceListItem"
         android:text="The Long Way Down"
         />
@@ -30,7 +40,6 @@
         android:id="@+id/book_author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:textAppearance="?attr/textAppearanceListItem"
         android:text="Sarah Mauricio"
         />
@@ -39,6 +48,12 @@
         android:id="@+id/book_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="5"
+        android:minLines="1"
+        android:ellipsize="end"
+        android:textAppearance="?attr/textAppearanceListItem"
         android:text="It was the best book ever and I would highly recommend it"
         />
 
@@ -47,5 +62,7 @@
         android:text="Buy on Amazon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#567b95"
+        android:textColor="@android:color/white"
         />
 </LinearLayout>
