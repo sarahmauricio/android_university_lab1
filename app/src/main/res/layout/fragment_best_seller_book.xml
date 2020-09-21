@@ -5,16 +5,47 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        />
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
         android:id="@+id/book_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="The Long Way Down"
+        />
 
     <TextView
         android:id="@+id/book_author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="Sarah Mauricio"
+        />
+
+    <TextView
+        android:id="@+id/book_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It was the best book ever and I would highly recommend it"
+        />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:text="Buy on Amazon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>
